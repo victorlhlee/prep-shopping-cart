@@ -1,3 +1,57 @@
 body{
-  background-color: yellow;
+  /*background-color: green;*/
 }
+
+#main{
+  /*background-color: yellow;*/
+  padding: 5px;
+  background-image: url('/images/cart.svg');
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left;
+  border-top-style: solid;
+  border-width: 1px;
+
+}
+
+
+
+
+#name{
+  /*background-color: salmon;*/
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 73px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+#descrip{
+  /*background-color: orange;*/
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#price{
+  /*background-color: aqua;*/
+  font-size: 25px;
+  float: right;
+  margin-right: 20px;
+  margin-top: -50px;
+ 
+}
+
+#price:before{
+  content: '$';
+}
+
+
+#total{
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+

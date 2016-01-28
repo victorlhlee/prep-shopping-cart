@@ -15,7 +15,35 @@ window.onload = function(){
     console.log(items[i].description);
     console.log(items[i].description[0]);
     console.log(items[i].price);
-   }
+    
+    var list = items[i];
+    var nameList = list.name;
+    var descriptList = list.description;
+    var priceList = list.price;
+
+    var mainElement = document.createElement('div');
+    mainElement.id = 'main';
+    document.body.appendChild(mainElement);
+
+    var nameElement = document.createElement('div');
+    nameElement.id = 'name';
+    nameElement.innerHTML = nameList;
+    mainElement.appendChild(nameElement);
+
+    var descripElement = document.createElement('div');
+    descripElement.id = 'descrip';
+    descripElement.innerHTML = descriptList;
+    nameElement.appendChild(descripElement);
+
+    var priceElement = document.createElement('div');
+    priceElement.id = 'price';
+    priceElement.innerHTML = priceList;
+    nameElement.appendChild(priceElement);
+
+
+ }
+
+
 
 
 
