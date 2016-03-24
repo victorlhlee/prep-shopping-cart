@@ -1,9 +1,19 @@
-body{
-  /*background-color: green;*/
+#header{
+  background-color: #D25F27;
+  padding: 10px;
+}
+#image-wrapper{
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#title{
+  font-size: 35px;
+  font-weight: bold;
 }
 
 #main{
-  /*background-color: yellow;*/
   padding: 5px;
   background-image: url('/images/cart.svg');
   background-repeat: no-repeat;
@@ -11,14 +21,14 @@ body{
   background-position: left;
   border-top-style: solid;
   border-width: 1px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 
 }
 
-
-
-
 #name{
-  /*background-color: salmon;*/
   padding: 5px;
   margin-top: 10px;
   margin-left: 73px;
@@ -26,27 +36,21 @@ body{
   font-weight: bold;
 }
 
-
-
-#descrip{
-  /*background-color: orange;*/
+#description{
   font-size: 20px;
   font-weight: normal;
 }
 
 #price{
-  /*background-color: aqua;*/
   font-size: 25px;
   float: right;
   margin-right: 20px;
   margin-top: -50px;
- 
 }
 
 #price:before{
   content: '$';
 }
-
 
 #total{
   position: absolute;
@@ -55,3 +59,40 @@ body{
   font-weight: bold;
 }
 
+#menubutton{
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#quantity{
+  float: right;
+  margin-right: 200px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+#menucontent{
+  display: none;
+  position: absolute;
+  text-decoration: none;
+}
+
+#quantity:hover #menucontent{
+  display: block;
+  padding-left: 30px;
+}
+
+#subtotal{
+  padding: 80px;
+  margin-top: 10px;
+  margin-left: 102px;
+  margin-right: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  border-top-style: solid;
+  border-width: 1px;
+}
